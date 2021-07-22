@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".VideoUploadActivity">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:backgroundTint="@color/black"
+        android:id="@+id/videoview"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Video Title"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@color/black"
+        android:autoText="true"
+        android:id="@+id/et_video_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Video"
+        android:onClick="chooseVideo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Video"
+        android:onClick="showVideo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_upload"
+        android:text="Upload"
+        android:layout_margin="20dp"/>
+
+     <ProgressBar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+         android:indeterminate="true"
+         android:indeterminateTint="@color/design_default_color_error"
+         android:visibility="invisible"
+         android:id="@+id/progressBar"/>
+</LinearLayout>

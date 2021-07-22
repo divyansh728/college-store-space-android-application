@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833630694537",
+    "project_id": "clg-space",
+    "storage_bucket": "clg-space.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833630694537:android:3acc8e43802d271b3baa58",
+        "android_client_info": {
+          "package_name": "com.example.college_storespace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833630694537-nha9t8o5vt07pgar3tff0ot0mp740rro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.college_storespace",
+            "certificate_hash": "70ebea4a501babb21085416d4e8d21d544423dd4"
+          }
+        },
+        {
+          "client_id": "833630694537-08d8o7so9fsjk20a5cu6dvkagn1ev98k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnryA4aFcrc0K9HhoxlJfmCnA7bgkcp00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833630694537-08d8o7so9fsjk20a5cu6dvkagn1ev98k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
