@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskDoubtActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listviewdoubt"
+        android:layout_height="match_parent">
+        </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/design_default_color_secondary"
+        android:weightSum="1000"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="200"
+            android:background="@android:color/holo_green_light"
+            android:hint="name"
+            android:textColor="#ffffff"></EditText>
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="100"
+            android:hint="    Type Your Message here"
+            android:layout_weight="800">
+
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:id="@+id/btnsnd"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/exo_edit_mode_background_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

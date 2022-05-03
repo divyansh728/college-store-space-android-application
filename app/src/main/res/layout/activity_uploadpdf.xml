@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_focused"
+    android:layout_height="match_parent"
+    tools:context=".Uploadpdf">
+
+    <ImageButton
+        android:id="@+id/dcximgbrws"
+        android:layout_width="216dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/browsepdfimg" />
+
+    <Button
+        android:id="@+id/upldbtn"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="164dp"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/flttl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="288dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="File Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="330dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:text=" You can Browse your PDF by clicking on below pdf image"
+        android:textColor="@color/purple_200"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shwdocxbtn"
+        android:layout_width="181dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="80dp"
+        android:text="Show PDF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

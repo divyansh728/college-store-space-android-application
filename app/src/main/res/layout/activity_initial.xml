@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF9F9"
+    android:orientation="vertical"
+
+    android:weightSum="6"
+    tools:context=".InitialActivity">
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="#EAFABF"
+       android:text="Welcome to Clg Store Space"
+       android:textAlignment="center"
+       android:textColor="#EF7E1C"
+       android:textSize="30dp"
+       android:textStyle="bold" />
+
+
+   <GridLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_marginTop="5dp"
+       android:layout_weight="6"
+       android:columnCount="1"
+       android:rowCount="2">
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/crdstdmt"
+          android:layout_width="0dp"
+          android:layout_height="2dp"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="6dp"
+          app:cardBackgroundColor="#8997C8"
+          app:cardElevation="3dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="280dp"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/stdmtimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Found Study material Here"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp"
+
+                />
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/crddoubt"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="8dp"
+          app:cardBackgroundColor="#5BB4C3"
+          app:cardElevation="5dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/doubtsimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Ask and Discuss Your Doubts          Here  "
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="28sp"
+
+                />
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+   </GridLayout>
+
+
+
+
+</LinearLayout>
