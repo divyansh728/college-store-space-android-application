@@ -1,5 +1,6 @@
 package com.example.college_storespace
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,27 +12,22 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
       auth = FirebaseAuth.getInstance()
+        var sharedPrefrences = getSharedPreferences("mainacivity",Context.MODE_PRIVATE)
+        if(sharedPrefrences.contains(lgnpaswd.toString())){
+            startActivity(Intent(this@MainActivity,CrdviewActivity::class.java))
+        }
         login()
         regtxt.setOnClickListener {
             startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
             finish()
         }
 
-        btngo.setOnClickListener {
-            startActivity(Intent(this@MainActivity, VideoUploadActivity::class.java))
-        }
-        homebtn.setOnClickListener {
-            startActivity(Intent(this@MainActivity, MyRecyclerViewActivity::class.java))
-        }
-        btnload.setOnClickListener {
-            startActivity(Intent(this@MainActivity, LoadActivity::class.java))
-        }
+
     }
     private fun login(){
 
@@ -50,7 +46,8 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener {
                     if (it.isSuccessful){
                         Toast.makeText(this@MainActivity, "Login Successful", Toast.LENGTH_LONG).show()
-                        startActivity(Intent(this@MainActivity,VideoUploadActivity::class.java))
+                        startActivity(Intent(this@MainActivity,InitialActivity::class.java))
+
                     }
                     else{
                         Toast.makeText(this@MainActivity, "Login failed try again", Toast.LENGTH_LONG).show()

@@ -24,6 +24,10 @@ class RegisterActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
 
         register()
+
+        lgntxt.setOnClickListener {
+            startActivity(Intent(this@RegisterActivity, MainActivity::class.java))
+        }
     }
 
     private fun register(){

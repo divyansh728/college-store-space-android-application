@@ -44,13 +44,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
     public ViewHolder(@NonNull @NotNull View itemView) {
         super( itemView );
-
+        downloadbtn = itemView.findViewById( R.id.download_button_viewholder );
     }
 
     public void setLikesbuttonStatus(final String postkey){
         likebutton = itemView.findViewById( R.id.like_btn );
         likesdisplay = itemView.findViewById( R.id.likes_textview );
-        downloadbtn = itemView.findViewById( R.id.download_button_viewholder );
         likesref = FirebaseDatabase.getInstance().getReference("likes");
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();

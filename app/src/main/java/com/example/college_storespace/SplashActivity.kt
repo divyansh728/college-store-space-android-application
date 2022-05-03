@@ -11,11 +11,12 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         @Suppress("DEPRECATION")
-        Handler().postDelayed(
+        Handler().postDelayed (
             {
+
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
                 finish()
-            },
+                  },
             2000
         )
     }

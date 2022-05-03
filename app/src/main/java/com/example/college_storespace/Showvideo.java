@@ -44,7 +44,6 @@ public class Showvideo extends AppCompatActivity {
     RecyclerView recyclerView;
     FirebaseDatabase database;
     String url,downloadurl;
-    ImageButton downloadbtn;
     Boolean likechecker = false;
 
     @Override
@@ -97,21 +96,21 @@ public class Showvideo extends AppCompatActivity {
                     protected void onStart() {
                         super.onStart();
 
-                        FirebaseRecyclerOptions<Member> options = new FirebaseRecyclerOptions.Builder<Member>()
+                        FirebaseRecyclerOptions<Member> options =
+                                new FirebaseRecyclerOptions.Builder<Member>()
                                 .setQuery( databaseReference, Member.class )
                                 .build();
                         FirebaseRecyclerAdapter<Member, ViewHolder> firebaseRecyclerAdapter =
                                 new FirebaseRecyclerAdapter<Member, ViewHolder>( options ) {
+
                                     @Override
-                                    protected void onBindViewHolder(@NonNull @NotNull ViewHolder holder, int position, @NonNull @NotNull Member model) {
+                                    protected void onBindViewHolder(ViewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull @NotNull Member model) {
                                         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                         String currentUserId = user.getUid();
                                         final String postkey = getRef( position ).getKey();
 
+                                        
                                         holder.setExoplayer( getApplication(), model.getName(), model.getVideourl() );
-
-                                        url = getItem( position ).getVideourl();
-                                        downloadbtn = findViewById( R.id.download_button_viewholder );
                                         holder.downloadbtn.setOnClickListener( new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view) {
@@ -126,9 +125,9 @@ public class Showvideo extends AppCompatActivity {
                                                         downloadurl = getItem( position).getVideourl();
                                                         startDownloading(downloadurl);
                                                     }
-                                                }else {
-                                                    downloadurl = getItem( position).getVideourl();
-                                                    startDownloading(downloadurl);
+                                                } else{
+                                                    downloadurl = getItem( position ).getVideourl();
+                                                    startDownloading( downloadurl );
                                                 }
                                             }
                                         } );

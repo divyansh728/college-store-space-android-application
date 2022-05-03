@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <EditText
@@ -38,49 +39,43 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginBottom="184dp"
+        android:background="@drawable/button_border"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/regtxt"
-        android:layout_width="354dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="84dp"
-        android:text="Don't have an account? Register"
+        android:layout_width="366dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="56dp"
+        android:background="#A2B0CC"
+        android:text="Don't have an account?          Register"
+        android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btngo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="96dp"
-        android:text="Go"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pricon" />
 
-    <Button
-        android:id="@+id/homebtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="216dp"
-        android:text="Home"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="99dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="636dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="268dp"
-        android:layout_marginTop="152dp"
-        android:text="Load"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_reg_icn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

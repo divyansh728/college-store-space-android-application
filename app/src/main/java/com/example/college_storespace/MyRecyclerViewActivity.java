@@ -27,7 +27,7 @@ public class MyRecyclerViewActivity extends AppCompatActivity {
         setContentView( R.layout.my_recycler_view );
 
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-        databaseReference.addChildEventListener( new ChildEventListener() {
+        databaseReference.addChildEventListener( new ChildEventListener() {    
             @Override
             public void onChildAdded(@NonNull @NotNull DataSnapshot snapshot, @Nullable @org.jetbrains.annotations.Nullable String previousChildName) {
 

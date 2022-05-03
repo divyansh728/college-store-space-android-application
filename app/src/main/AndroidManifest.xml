@@ -13,11 +13,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.College_StoreSpace">
-        <activity android:name=".Showvideo"></activity>
+        <activity android:name=".AskDoubtActivity" />
+        <activity android:name=".uplddoubtActivity" />
+        <activity android:name=".InitialActivity" />
+        <activity android:name=".ImgandDataRecyclerViewActivity" />
+        <activity android:name=".ImageUploadActivity" />
+        <activity android:name=".UploaddocxActivity" />
+        <activity android:name=".displaypdf" />
+        <activity android:name=".ShowPDFActivity" />
+        <activity android:name=".Uploadpdf" />
+        <activity android:name=".CrdviewActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Showvideo" />
         <activity android:name=".VideoUploadActivity" />
-        <activity android:name=".ViewHolder"></activity>
         <activity android:name=".LoadActivity" />
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

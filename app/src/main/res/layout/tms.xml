@@ -33,19 +33,18 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:orientation="horizontal">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="30sp"
+              android:textColor="@android:color/black"
+              android:hint="likes"
+              android:id="@+id/likes_textview"/>
           <ImageButton
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:src="@drawable/ic_baseline_favorite_dislike"
               android:id="@+id/like_btn"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:hint="likes"
-        android:id="@+id/likes_textview"/>
 
           <ImageButton
               android:layout_width="wrap_content"
@@ -56,6 +55,10 @@
               android:layout_marginLeft="80dp"
               android:padding="5dp"
               tools:ignore="ContentDescription" />
+
+
+
+
 
       </LinearLayout>
 
